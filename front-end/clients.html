@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Clientes</title>
+</head>
+
+<body>
+    <h2 class="section-title">Cadastrando clientes</h2>
+    <form id="client-form" class="form">
+        <label for="client-name">Nome do cliente: </label>
+        <input type="text" name="client-name" id="client-name" class="input"> <br />
+        <label for="client-email">E-mail do cliente: </label>
+        <input type="email" name="client-email" id="client-email" class="input"> <br />
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <h2 class="section-title">Consultando clientes</h2>
+
+    <button id="client-show" class="btn">Ver todos os clientes</button>
+    <ul id="client-list"> </ul>
+
+    <h2 class="section-title">Editar cliente</h2>
+    <form id="update-form" class="form">
+        <label for="target-client">Qual cliente deseja editar ? </label> 
+        <input type="number" name="target-client" id="target-client" class="input" 
+        placeholder="ID do cliente"> </br>
+        <label for="new-name">Digite o novo nome : </label>
+        <input type="text" name="new-name" id="new-name" class="input"> <br />
+        <label for="new-email">Digite o novo e-mail: </label>
+        <input type="email" name="new-email" id="new-email" class="input"> <br />
+
+        <button type="submit" class="btn">Editar</button>
+    </form>
+
+    <h2 class="section-title">Remover cliente</h2>
+    <form id="delete-form" class="form">
+
+        <label for="rmv-client">Id do cliente: </label>
+        <input type="number" name="rmv-client" id="rmv-client"
+        placeholder="ID do cliente" class="input"> <br/>
+        <button type="submit" class="btn">Remover</button>
+    </form>
+
+    <script src="scripts/clients.js"></script>
+</body>
+
+</html>
