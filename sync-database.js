@@ -1,9 +1,11 @@
 const { Client } = require('pg');
 
+//Inicializando o cliente PostgreSQL  e conectando-se ao banco de dados
 const client = new Client({
     connectionString: "postgresql://postgres:1234@localhost:5433/node_postgres"
 });
 
+//Função assíncrona para a criação de tabela
 async function createTable() {
     try {
         await client.connect();

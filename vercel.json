@@ -1,0 +1,15 @@
+{
+    "verwsion": 2,
+    "builds": [
+        {
+            "src": "/rotas.js",
+            "use": "@vercel/node"
+        }
+    ], 
+    "routes": [
+        {
+            "src": "(.*)", 
+            "dest": "src/rotas.js"
+        }
+    ]
+}
