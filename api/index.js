@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require("cors");
 
 const client = new Client({
-    connectionString: "postgresql://postgres:1234@localhost:5433/node_postgres"
+    connectionString: "postgresql://loja_48p5_user:T3chZ8sSB7bhbv0IKvOoFrQf0VqSZhRf@dpg-cupln15ds78s73946heg-a/loja_48p5"
 });
 
 client.connect()
